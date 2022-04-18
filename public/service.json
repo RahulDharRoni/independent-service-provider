@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "FITNESS CONSULTANT",
+        "price": "300",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "img": "https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839087__480.jpg"
+    },
+    {
+        "id": 2,
+        "name": "GROUP WORKOUTS",
+        "price": "390",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "img": "https://cdn.pixabay.com/photo/2013/02/26/02/14/exercise-86200__480.jpg"
+    },
+    {
+        "id": 3,
+        "name": "ONE TO ONE TRAINING",
+        "price": "350",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "img": "https://cdn.pixabay.com/photo/2021/01/04/06/20/man-5886570__480.jpg"
+    },
+    {
+        "id": 4,
+        "name": "MEAL SERVICES",
+        "price": "355",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "img": "https://media.istockphoto.com/photos/computerized-wheel-alignment-machine-clamp-picture-id463462731"
+    },
+    {
+        "id": 5,
+        "name": "DIFFERENT WAY WORKOUT",
+        "price": "199",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "img": "https://cdn.pixabay.com/photo/2021/10/12/02/21/sports-center-for-the-elderly-6702147__480.jpg"
+    },
+    {
+        "id": 6,
+        "name": "30 MINUTES CARDIO",
+        "price": "100",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "img": "https://cdn.pixabay.com/photo/2014/10/22/17/25/woman-498257__340.jpg"
+    }
+]

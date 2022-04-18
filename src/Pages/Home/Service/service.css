@@ -1,0 +1,13 @@
+.service-container {
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: black;
+}
+
+.btn-org {
+    margin: 10px 0;
+    background-color: rgb(130, 130, 245);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}

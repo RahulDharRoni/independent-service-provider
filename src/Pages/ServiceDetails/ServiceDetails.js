@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const ServiceDetails = () => {
+const ServiceDetails = ({ id }) => {
     let { servicesId } = useParams();
+    const [user, setUser] = useState('');
+
+    useEffect(() => {
+        fetch('service.json')
+            .then(res => res.json())
+            .then(data => setUser(data))
+    }, [])
+
     return (
         <div>
 

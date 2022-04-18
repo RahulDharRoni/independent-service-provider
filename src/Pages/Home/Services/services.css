@@ -1,7 +1,9 @@
 .our-service {
-    color: rgb(81, 81, 255);
+    color: rgb(118, 1, 1);
     text-align: center;
     text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
 }
 
 .services-container {
@@ -10,6 +12,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     text-align: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
 }
 
 .services-container img {

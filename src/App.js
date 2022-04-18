@@ -21,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path="/Home" element={<Home></Home>} />
-        <Route path="/services" element={<Services></Services>} />X
-        <Route path="/service/:servicesId" element={
+        <Route path="/services" element={<Services></Services>} />
+        <Route path="/serviceDetails" element={
           <RequiredAuth>
             <ServiceDetails></ServiceDetails>
           </RequiredAuth>

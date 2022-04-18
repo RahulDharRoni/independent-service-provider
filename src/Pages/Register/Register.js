@@ -24,7 +24,7 @@ const Register = () => {
         const password = event.target.password.value;
         const cPassword = event.target.cPassword.value;
         if (password !== cPassword) {
-            setError("password did not match")
+            setError("Password did not match!")
         }
         createUserWithEmailAndPassword(email, password)
         console.log(email, password, cPassword)
@@ -54,7 +54,7 @@ const Register = () => {
                     <input type="password" className='form-control' name='cPassword'></input>
 
                 </div>
-                <p>{error}</p>
+                <p className='text-danger'>{error}</p>
                 <button type="submit" className="btn btn-danger">Submit</button>
                 <p>Already Have an Account? <small onClick={navigateLogin}>Login Here</small> </p>
                 <div className='d-flex align-items-center'>

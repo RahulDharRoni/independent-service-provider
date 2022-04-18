@@ -7,7 +7,7 @@ const Service = (props) => {
 
     const navigate = useNavigate()
     const handalNavigateToServiceDetails = id => {
-        navigate(`/service/${id}`)
+        navigate('/serviceDetails')
     }
     return (
         <div className='service-container'>

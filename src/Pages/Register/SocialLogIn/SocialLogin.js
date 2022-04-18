@@ -5,22 +5,18 @@ import auth from '../../../firebase.init';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const [signInWithGithub] = useSignInWithGithub(auth);
-    const [signInWithFacebook] = useSignInWithFacebook(auth);
+    const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const [signInWithFacebook, user2, loading2, error2] = useSignInWithFacebook(auth);
     const navigate = useNavigate();
 
     let errorUpdate;
-    if (error) {
+    if (error || error1) {
         errorUpdate = <div>
             <p>Error: {error.message}</p>
         </div>
     }
-
-    if (loading) {
-        return <p>Loading...</p>;
-    }
-    if (user) {
-        navigate('/home')
+    if (user || user1) {
+        navigate('/service/servicesId')
     }
     return (
         <div>

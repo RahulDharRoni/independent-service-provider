@@ -10,6 +10,7 @@ const Login = () => {
     const [
         signInWithEmailAndPassword,
         user,
+        loading,
         error,
     ] = useSignInWithEmailAndPassword(auth, { sendEmailVerification: true });
 
@@ -31,13 +32,6 @@ const Login = () => {
         await sendPasswordResetEmail(email);
         alert('Sent email');
     }
-    if (error) {
-        return (
-            <div>
-                <p>Error: {error.message}</p>
-            </div>
-        );
-    }
 
     if (user) {
         navigate('/checkout')
@@ -47,6 +41,10 @@ const Login = () => {
     const navigateToRegister = event => {
         navigate('/register')
     }
+    let errorUpdate;
+    if (error) {
+        errorUpdate = <p>Error: {error.message}</p>
+    };
     return (
         <div className='w-50 p-3 mx-auto border my-5 rounded'>
             <h1 className='text-danger text-center'>Login In Now</h1>
@@ -60,6 +58,8 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
+                <h5 className='text-danger'>{errorUpdate}</h5>
+
 
                 <Button variant="primary" type="submit">
                     Submit

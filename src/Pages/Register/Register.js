@@ -70,7 +70,7 @@ const Register = () => {
                 <p className='text-danger'>{errors}</p>
                 <button type="submit" className="btn btn-danger">Submit</button>
                 <h3 className='text-danger'>{errorMessage}</h3>
-                <p>Already Have an Account? <small onClick={navigateLogin}>Login Here</small> </p>
+                <p>Already Have an Account? <small onClick={navigateLogin} className="text-danger">Login Here</small> </p>
                 <div className='d-flex align-items-center'>
                     <div style={{ height: '1px' }} className="bg-danger w-50"></div>
                     <p className='mt-2 px-2'>Or</p>

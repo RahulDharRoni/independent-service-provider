@@ -13,6 +13,8 @@ import RequiredAuth from './Pages/RequiredAuth/RequiredAuth';
 import Service from './Pages/Home/Service/Service';
 import Expert from './Pages/Home/Expert/Expert';
 import Footer from './Pages/Shared/Footer/Footer';
+import Blogs from './Pages/Blogs/Blogs';
+import CheckOut from './Pages/CheckOut/CheckOut';
 
 function App() {
   return (
@@ -22,17 +24,19 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/Home" element={<Home></Home>} />
         <Route path="/services" element={<Services></Services>} />
-        <Route path="/serviceDetails" element={
+        <Route path="/checkout" element={
           <RequiredAuth>
-            <ServiceDetails></ServiceDetails>
+            <CheckOut></CheckOut>
           </RequiredAuth>
         } />
         <Route path="/login" element={<Login></Login>} />
         <Route path="/expert" element={<Expert></Expert>} />
         <Route path="/about" element={<About></About>} />
+        <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/register" element={<Register></Register>} />
         <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
+
       <Footer></Footer>
     </>
 

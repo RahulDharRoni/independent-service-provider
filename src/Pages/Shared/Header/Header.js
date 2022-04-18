@@ -26,7 +26,9 @@ const Header = () => {
                             <Nav.Link to='expert' as={Link}>Expert</Nav.Link>
                         </Nav>
                         <Nav>
+                            <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                             <Nav.Link as={Link} to="about">About</Nav.Link>
+                            <Nav.Link as={Link} to="checkout">CheckOut</Nav.Link>
                         </Nav>
                         {
                             user ? <Nav>

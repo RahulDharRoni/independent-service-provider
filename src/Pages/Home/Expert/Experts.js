@@ -7,9 +7,9 @@ const Experts = (props) => {
         <div className="card col-12 col-md-3 mx-auto padding-sm-10">
             <img src={img} className="card-img-top" alt="" />
             <div className="card-body">
-                <h5 className='card-text'>{name}</h5>
+                <h5 className='card-text text-danger'>{name}</h5>
                 <p className="card-text">{descriotion}</p>
-                <p className="card-text"><small className="text-muted">{id}</small></p>
+                <h5>YoUR PERSONAL FITNESS AND GYM TRAINER</h5>
             </div>
         </div>
     );

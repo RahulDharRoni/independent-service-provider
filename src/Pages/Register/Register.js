@@ -8,13 +8,14 @@ const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
-        loading
-    ] = useCreateUserWithEmailAndPassword(auth);
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);;
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [cPassword, setCpassword] = useState('')
-    const [error, setError] = useState('')
+    const [errors, setErrors] = useState('')
     const navigate = useNavigate()
 
 
@@ -24,10 +25,12 @@ const Register = () => {
         const password = event.target.password.value;
         const cPassword = event.target.cPassword.value;
         if (password !== cPassword) {
-            setError("Password did not match!")
+            setErrors("Password did not match!")
+        }
+        if (password <= 6) {
+            setErrors("Password must be more then equal six!")
         }
         createUserWithEmailAndPassword(email, password)
-        console.log(email, password, cPassword)
     }
     const navigateLogin = () => {
         navigate('/login')
@@ -35,6 +38,16 @@ const Register = () => {
     if (user) {
         navigate('/Home')
     }
+
+    if (loading) {
+        return <p>Loading...</p>;
+    }
+
+    let errorMessage;
+    if (error) {
+        errorMessage = <p>Error: {error.message}</p>
+    };
+
 
     return (
         <div className='w-50 mx-auto shadow p-5 my-5 rounded border'>
@@ -54,8 +67,9 @@ const Register = () => {
                     <input type="password" className='form-control' name='cPassword'></input>
 
                 </div>
-                <p className='text-danger'>{error}</p>
+                <p className='text-danger'>{errors}</p>
                 <button type="submit" className="btn btn-danger">Submit</button>
+                <h3 className='text-danger'>{errorMessage}</h3>
                 <p>Already Have an Account? <small onClick={navigateLogin}>Login Here</small> </p>
                 <div className='d-flex align-items-center'>
                     <div style={{ height: '1px' }} className="bg-danger w-50"></div>

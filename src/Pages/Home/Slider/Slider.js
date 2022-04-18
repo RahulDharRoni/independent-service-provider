@@ -20,8 +20,9 @@ const Slider = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h1 className='text-warning text-uppercase font-weight-bold'>Fitness advicsor</h1>
+                    <h1 className='text-size-bold'>My Name is ROLAND QUEMAN</h1>
+                    <p>Personal trainers, health fitness specialists, and fitness coaches educate and motivate clients in physical fitness, including cardiovascular exercise.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -32,22 +33,22 @@ const Slider = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1 className='text-warning text-uppercase font-weight-bold'>Fitness advicsor</h1>
+                    <h1 className='text-size-bold'>My Name is ROLAND QUEMAN</h1>
+                    <p>Personal trainers, health fitness specialists, and fitness coaches educate and motivate clients in physical fitness, including cardiovascular exercise.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-fluid w-100 h-50"
-                    src="https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_1280.jpg"
+                    className="d-fluid w-100"
+                    src="https://cdn.pixabay.com/photo/2018/09/26/13/02/barbell-3704578_1280.jpg"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
+                    <h1 className='text-warning text-uppercase font-weight-bold'>Fitness advicsor</h1>
+                    <h1 className='text-size-bold'>My Name is ROLAND QUEMAN</h1>
+                    <p>Personal trainers, health fitness specialists, and fitness coaches educate and motivate clients in physical fitness, including cardiovascular exercise.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

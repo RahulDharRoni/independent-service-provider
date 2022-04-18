@@ -12,13 +12,11 @@ const Login = () => {
         user,
         error,
     ] = useSignInWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [sendPasswordResetEmail, sending, error2] = useSendPasswordResetEmail(
-        auth
-    );
+
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
     const emailRef = useRef('')
     const passwordRef = useRef('')
-    // const error = useRef('')
     const navigate = useNavigate()
 
     const handleSubmit = event => {
@@ -33,16 +31,18 @@ const Login = () => {
         await sendPasswordResetEmail(email);
         alert('Sent email');
     }
-
-    let errorUpdate;
     if (error) {
-        errorUpdate =
-            <p className='text-danger text-center'>Error: {error?.message}</p>
+        return (
+            <div>
+                <p>Error: {error.message}</p>
+            </div>
+        );
     }
 
     if (user) {
-        navigate('/serviceDetails')
+        navigate('/checkout')
     }
+
 
     const navigateToRegister = event => {
         navigate('/register')
@@ -60,8 +60,6 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-
-                {errorUpdate}
 
                 <Button variant="primary" type="submit">
                     Submit

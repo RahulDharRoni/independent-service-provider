@@ -8,7 +8,7 @@ const Footer = () =>
             <div className="row">
                 <div className="col-md-6 mt-md-0 mt-3">
                     <h5 className="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    <p>I am MERN stake developer. I have been working as a freelancer for last 2 years in fiverr and upwork based other platform. I am good at wordpress , clickfunnel, shopify and other CMS site builders. </p>
                 </div>
 
                 <hr className="clearfix w-100 d-md-none pb-0" />
@@ -32,8 +32,8 @@ const Footer = () =>
             </div>
         </div>
 
-        <div className="footer-copyright text-center py-3 text-white">© 2020 Copyright:
-            <a href="www.google.com" className="text-decoration-none text-white"> Cope</a>
+        <div className="footer-copyright text-center py-3 text-white">Developed By @
+            <a href="www.google.com" className="text-decoration-none text-white"> Rahul Dhar Roni</a>
         </div>
 
     </footer >

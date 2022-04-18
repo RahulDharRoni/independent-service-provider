@@ -33,7 +33,7 @@ const Register = () => {
         navigate('/login')
     }
     if (user) {
-        navigate('/home')
+        navigate('/Home')
     }
 
     return (

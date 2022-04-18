@@ -66,9 +66,12 @@ const Login = () => {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
+                <div className=''>
+                    <p>Dont have any account? <small onClick={navigateToRegister} className="text-danger font-weight-bold">Sign Up Here!</small> </p>
+                    <p>Forget Password? <small onClick={resetPassword} className="text-danger font-weight-bold">Reset Password</small> </p>
+                </div>
 
-                <p>Dont have any account? <small onClick={navigateToRegister} className="text-danger font-weight-bold">Sign Up Here!</small> </p>
-                <p>Forget Password? <small onClick={resetPassword} className="text-danger font-weight-bold">Reset Password</small> </p>
+
 
             </Form>
 
